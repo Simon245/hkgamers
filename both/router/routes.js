@@ -19,7 +19,7 @@ Router.map(function () {
   	path: '/'
   });
 
-  this.route('createPost', {
-    path: 'create-post',
+  this.route('showPost', {
+    path: 'show-post',
   });
 });

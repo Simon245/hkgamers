@@ -1,7 +1,7 @@
-Template.createPost.helpers({
+Template.showPost.helpers({
 
-  createNewPost: function() {
-    var newPost = {
+  showPost: function() {
+    var post = {
       userId: 0001,
       _postId: "afj48laejsf",
       title: "Gaming gear for sale",
@@ -55,7 +55,7 @@ Template.createPost.helpers({
         },
       ]
     };
-    return newPost;
+    return post;
   },
 });
 
