@@ -11,7 +11,7 @@ Template.showPost.helpers({
       userId: 0001,
       _postId: "afj48laejsf",
       title: "Gaming gear for sale",
-      description: "I am selling all these items and I will ship all via FedEx.",
+      description: "I am selling all these items.",
       views: 5,
       locationId: "central",
       dateCreated: "dateStamp",

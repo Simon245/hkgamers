@@ -16,27 +16,6 @@ Template.footer.helpers({
     var time = hours + ":" + minutes
     return time;
   },
-
-  car: function() {
-   var audi = {
-      wheels: 4,
-      doors: 2,
-      engine: "200hp",
-      passengers: [
-        {
-          firstName: "Jim",
-          lastName: "Bob"
-        },
-        {
-          firstName: "Joe",
-          lastName: "Bean"
-        }
-      ]
-
-    };
-
-    return audi;
-  },
 });
 
 
