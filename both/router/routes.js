@@ -19,5 +19,7 @@ Router.map(function () {
   	path: '/'
   });
 
-  this.route('index.index', {path: '/'});
+  this.route('createPost', {
+    path: 'create-post',
+  });
 });
