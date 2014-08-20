@@ -1,5 +1,11 @@
 Template.showPost.helpers({
 
+  accountingPrice: function(price){
+    var dividePrice = price / 100;
+    var result = accounting.formatMoney(dividePrice);
+    return result;
+  },
+
   showPost: function() {
     var post = {
       userId: 0001,
@@ -21,8 +27,8 @@ Template.showPost.helpers({
           catagory: ["xbox", "playstation"],
           dateSold: "dateStamp",
           condition: "excellent",
-          price: 10000,
-          currency: "HK$",
+          price: 1000,
+          currency: "HK",
           status: "available/sold/pending",
         },
         {
@@ -35,7 +41,7 @@ Template.showPost.helpers({
           catagory: ["xbox"],
           dateSold: "dateStamp",
           condition: "ok",
-          price: 1000,
+          price: 10000000,
           currency: "HK$",
           status: "available/sold/pending",
         },
@@ -49,7 +55,7 @@ Template.showPost.helpers({
           catagory: ["playstation"],
           dateSold: "dateStamp",
           condition: "poor",
-          price: 1000,
+          price: 100000,
           currency: "HK$",
           status: "available/sold/pending",
         },

@@ -4,14 +4,16 @@
     <h2>{{ showPost.title }}</h2>
     <h2>Description</h2>
       <p>{{ showPost.description }}</p>
+
     <h3>Items</h3>
       <ul>{{#each showPost.itemsForSale}}
         <li>{{name}}</li>
         <li>{{description}}</li>
         <li>{{catagory}}</li>
         <li>{{condition}}</li>
-        <li>{{currency}}{{price}}</li>
+        <li>{{currency}}{{accountingPrice price}}</li>
         <li>{{status}}</li>
+        <li>{{imageUrls}}</li>
       {{/each}}</ul>
       <p></p>
   </div>
