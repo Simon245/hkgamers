@@ -1,4 +1,4 @@
-Template.create_posts.helper ({
+Template.createPost.helpers({
 
   createNewPost: function() {
     var newPost = {
@@ -56,9 +56,7 @@ Template.create_posts.helper ({
       ]
     };
     return newPost;
-  };
-
-
-
-
+  },
 });
+
+
