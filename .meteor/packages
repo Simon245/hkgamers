@@ -7,3 +7,5 @@ standard-app-packages
 iron-router
 jquery
 bootstrap-3
+accounts-ui-bootstrap-dropdown
+accounts-password
