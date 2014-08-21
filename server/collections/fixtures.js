@@ -4,7 +4,7 @@ if (Posts.find().count() === 0 ) {
     userId: 0001,
     _postId: "01",
     title: "Gaming Collection",
-    description: "I am selling all gaming gear.",
+    description: "I am selling all my gaming gear.",
     views: 5,
     locationId: "central",
     dateCreated: "dateStamp",
