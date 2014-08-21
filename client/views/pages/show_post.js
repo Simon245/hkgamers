@@ -10,6 +10,7 @@ Template.showPost.helpers({
     var post = Posts.find().fetch()[1];
     return post;
   },
+  
 });
 
 

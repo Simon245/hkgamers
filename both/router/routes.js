@@ -2,9 +2,9 @@
 /* Client and Server Routes */
 /*****************************************************************************/
 Router.configure({
-  layoutTemplate: 'MasterLayout',
-  loadingTemplate: 'Loading',
-  notFoundTemplate: 'NotFound',
+  layoutTemplate: 'masterLayout',
+  loadingTemplate: 'loading',
+  notFoundTemplate: 'notFound',
   templateNameConverter: 'upperCamelCase',
   routeControllerNameConverter: 'upperCamelCase',
   waitOn: function(){
@@ -18,11 +18,18 @@ Router.map(function () {
       this.route('home', {path: '/'});
   */
 
-  this.route('index', {
-  	path: '/'
+  this.route('postsList', {
+    path: '/',
   });
 
   this.route('showPost', {
-    path: 'show-post',
+    path: '/posts/_:id',
   });
+
+  this.route('postSubmit', {
+    path: '/posts/submit'
+  });
+
 });
+
+Router.onBeforeAction('loading');
