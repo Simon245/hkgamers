@@ -6,7 +6,10 @@ Router.configure({
   loadingTemplate: 'Loading',
   notFoundTemplate: 'NotFound',
   templateNameConverter: 'upperCamelCase',
-  routeControllerNameConverter: 'upperCamelCase'
+  routeControllerNameConverter: 'upperCamelCase',
+  waitOn: function(){
+    return Meteor.subscribe('posts');
+  }
 });
 
 Router.map(function () {
@@ -19,5 +22,7 @@ Router.map(function () {
   	path: '/'
   });
 
-  this.route('index.index', {path: '/'});
+  this.route('showPost', {
+    path: 'show-post',
+  });
 });
