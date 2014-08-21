@@ -25,4 +25,11 @@ Router.map(function () {
   this.route('showPost', {
     path: 'show-post',
   });
+
+  this.route('postSubmit', {
+    path: 'submit'
+  });
+
+  Router.onBeforeAction('loading');
+
 });
