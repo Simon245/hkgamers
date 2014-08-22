@@ -8,17 +8,10 @@ Template.postSubmit.events({
       message: $(e.target).find('[name=message]').val()
     }
 
-    console.log("These are the postContents from jQuery");
-    console.log(postContents);
+    var IDOfTheNewPost = Posts.insert(postContents);
 
-    var id = Posts.insert(postContents); // When insert is successful, the _id of the newly-created document is returned back
+    postContents.IDString = IDOfTheNewPost;
 
-    postContents._id = id;
-
-    console.log("These are the postContents after successful .insert into Posts collection:");
-    console.log(postContents);
-
-
-    Router.go('showPost', postContents);
+    Router.go('/show-post/' + postContents.IDString);
   }
 });
