@@ -30,6 +30,10 @@ Router.map(function () {
     path: '/posts/submit'
   });
 
+  this.route('editProfile', {
+    path: '/profile/edit'
+  });
+
 });
 
 Router.onBeforeAction('loading');
