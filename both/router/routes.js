@@ -2,9 +2,9 @@
 /* Client and Server Routes */
 /*****************************************************************************/
 Router.configure({
-  layoutTemplate: 'masterLayout',
-  loadingTemplate: 'loading',
-  notFoundTemplate: 'notFound',
+  layoutTemplate: 'MasterLayout',
+  loadingTemplate: 'Loading',
+  notFoundTemplate: 'NotFound',
   templateNameConverter: 'upperCamelCase',
   routeControllerNameConverter: 'upperCamelCase',
   waitOn: function(){
