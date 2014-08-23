@@ -30,6 +30,10 @@ Router.map(function () {
     path: '/posts/submit'
   });
 
+  this.route('contactForm', {
+    path: '/contact'
+  });
+
 });
 
 Router.onBeforeAction('loading');
