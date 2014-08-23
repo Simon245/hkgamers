@@ -1,3 +1,26 @@
 <template name="contactForm">
-  <h1>Contact Form</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col col-md-6">
+        <h1>Contact form</h1>
+        <form id="contact-form">
+          <div class="form-group">
+            <input class="form-control" type="text" id="firstName" placeholder="First Name" value="{{firstName}}">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" id="lastName" placeholder="Last Name" value="{{lastName}}">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" id="email" placeholder="Email" value="{{email}}">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" type="text" id="message" placeholder="Message" value="{{message}}"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </template>

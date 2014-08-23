@@ -9,7 +9,7 @@ Router.configure({
   routeControllerNameConverter: 'upperCamelCase',
   waitOn: function(){
     return Meteor.subscribe('posts');
-  }
+  },
 });
 
 Router.map(function () {
@@ -32,6 +32,13 @@ Router.map(function () {
 
   this.route('contactForm', {
     path: '/contact'
+  });
+
+  this.route('adminMessages', {
+    path: '/admin/messages',
+    waitOn: function(){
+      return Meteor.subscribe('adminContactMessages');
+    }
   });
 
 });

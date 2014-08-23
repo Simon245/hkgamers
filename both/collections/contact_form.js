@@ -1,0 +1,1 @@
+AdminContactMessages = new Meteor.Collection('adminContactMessages');
