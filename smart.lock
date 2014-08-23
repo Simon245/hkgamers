@@ -6,7 +6,8 @@
         "version": "0.8.2"
       },
       "accounts-ui-bootstrap-dropdown": {},
-      "spin": {}
+      "spin": {},
+      "profile": {}
     },
     "packages": {
       "iron-router": {
@@ -23,6 +24,11 @@
         "git": "https://github.com/SachaG/meteor-spin.git",
         "tag": "v2.0.4",
         "commit": "f7b1e12a7caff1283cdb3671a393c182d0ae9862"
+      },
+      "profile": {
+        "git": "https://github.com/Differential/meteor-profile.git",
+        "tag": "v0.0.10",
+        "commit": "2540cdc76cf5c5fdf6ee0fd0cff1e37c4b1ba519"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

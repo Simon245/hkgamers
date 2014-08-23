@@ -30,9 +30,28 @@ Router.map(function () {
     path: '/posts/submit'
   });
 
+  // this.route('profile', {
+  //   path: '/profile'
+  // });
+
+// Router.map ->
+//   @route 'home',
+//     path: '/',
+//     template: 'home'
+//     data: ->
+//       Meteor.user()
+
+//   this.route('UserProfile', {
+
+//   })
+
   this.route('editProfile', {
-    path: '/profile/edit'
+    path: '/profile/edit',
+    data: function(){
+      return Meteor.user();
+    }
   });
+
 
 });
 
